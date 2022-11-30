@@ -6,10 +6,10 @@ from collections import defaultdict
 
 from network import  Network_light
 from higher_order_network  import HigherOrderNetwork_light
-from variable_order_chawla import VariableOrderNetwork_Xu_light
+from variable_order_honem import VariableOrderNetwork_Xu_light
 
-from chawla.ExtractVariableOrderRulesFreq import *
-from chawla.NetworkRewiring import *
+from honem.ExtractVariableOrderRulesFreq import *
+from honem.NetworkRewiring import *
 
 
 
