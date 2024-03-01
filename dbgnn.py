@@ -24,6 +24,9 @@ class BipartiteGraphOperator(torch_geometric.nn.MessagePassing):
         x = (self.lin1(x[0]), self.lin2(x[1]))
         return self.propagate(bipartite_index, size=(N, M), x=x)
 
+    def message(self, x_i, x_j):
+         return x_i + x_j
+
 
 import torch
 import torch_geometric
